@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автомаршруты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<a href="#main-content" class="visually-hidden">Перейти к контенту</a>
+
+<main id="main-content">
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-inner">
+
+            <div class="logo">
+                <img src="./img/logo.svg" alt="Логотип национального проекта Туризм и гостеприимство">
+                <span>ТУРИЗМ<br>И ГОСТЕПРИИМСТВО</span>
+            </div>
+
+            <nav class="nav" aria-label="Основная навигация">
+                <a href="index.html">Главная</a>
+                <a href="#">Фотобанк</a>
+            </nav>
+
+            <div class="right">
+
+                <button class="icon small" aria-label="ВКонтакте">
+                    <img src="img/vk.webp" alt="ВКонтакте">
+                </button>
+
+                <button class="icon small" aria-label="Одноклассники">
+                    <img src="img/odnoklasniki.svg" alt="Одноклассники">
+                </button>
+
+                <button class="icon small" aria-label="WhatsApp">
+                    <img src="img/wahtsup.webp" alt="WhatsApp">
+                </button>
+
+                <button class="icon big search-btn"
+                        aria-label="Открыть поиск"
+                        aria-controls="search"
+                        aria-expanded="false">
+                    🔍
+                </button>
+
+                <button class="theme-toggle" aria-label="Переключить тему">
+                    <div class="toggle-circle"></div>
+                </button>
+
+                <button class="icon big menu-btn"
+                        aria-label="Открыть меню"
+                        aria-controls="menu"
+                        aria-expanded="false">
+                    ≡
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- ПОИСК -->
+    <div id="search"
+         class="search-bar"
+         role="search"
+         aria-hidden="true">
+
+        <input type="text"
+               placeholder="Введите запрос"
+               aria-label="Поиск маршрутов">
+
+        <button>Найти</button>
+    </div>
+
+    <div class="search-overlay" aria-hidden="true"></div>
+
+    <!-- МЕНЮ -->
+    <div id="menu"
+         class="menu-overlay"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="menu-title"
+         aria-hidden="true">
+
+        <h2 id="menu-title" class="visually-hidden">Меню сайта</h2>
+
+        <div class="menu">
+
+            <div class="menu-left">
+                <button class="menu-item active">Когда едем</button>
+                <button class="menu-item">Чего хочется</button>
+                <button class="menu-item">Маршруты</button>
+                <button class="menu-item">События</button>
+            </div>
+
+            <div class="menu-right">
+                <div class="menu-content active">
+                    <p>Лето</p>
+                    <p>Зима</p>
+                    <p>Круглый год</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- HERO -->
+    <section class="auto-hero">
+
+        <img class="auto-bg"
+             src="img/Halfpoint_shut.jpeg"
+             alt="Пейзаж России с дорогой и природой, подходящий для автомобильного маршрута">
+
+        <div class="auto-overlay" aria-hidden="true"></div>
+
+        <div class="container auto-inner">
+
+            <h1 class="auto-title">АВТОМАРШРУТЫ</h1>
+
+            <div class="auto-filters">
+
+                <button class="glass-btn" aria-label="Выбрать направление">
+                    Все направления <span aria-hidden="true">›</span>
+                </button>
+
+                <button class="glass-btn" aria-label="Выбрать регион">
+                    Все регионы <span aria-hidden="true">›</span>
+                </button>
+
+                <!-- счетчик -->
+                <div class="auto-count" aria-live="polite">
+                    Всего маршрутов: <b id="count">131</b>
+                </div>
+
+            </div>
+
+            <div class="auto-tags" role="group" aria-label="Фильтры маршрутов">
+                <button>Зима</button>
+                <button>С детьми</button>
+                <button>Активный отдых</button>
+                <button>Выходные</button>
+                <button class="dark">Показать маршруты</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- КАРТОЧКИ -->
+    <section class="auto-cards-page">
+
+        <div class="container auto-grid" role="list">
+
+            <!-- карточка -->
+            <div class="route-card-new" role="listitem">
+
+                <div class="card-image">
+                    <img src="img/shutterstock_1.jpeg"
+                         alt="Сибирский пейзаж на маршруте Енисейский тракт">
+
+                    <div class="card-title">Енисейский тракт</div>
+                </div>
+
+                <div class="card-body">
+
+                    <h2 class="visually-hidden">Енисейский тракт</h2>
+
+                    <p class="desc">
+                        Путешествие по Сибири с историей и природой.
+                    </p>
+
+                    <div class="route-line">
+                        Красноярск → Енисейск
+                    </div>
+
+                    <div class="card-info-row">
+                        <span>📍 440 км</span>
+                        <span>⏱ 3 дня</span>
+                    </div>
+
+                    <div class="tags">
+                        <span>Зима</span>
+                        <span>Круглый год</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- карточка -->
+            <div class="route-card-new" role="listitem">
+
+                <div class="card-image">
+                    <img src="img/shutterstock_1(1).jpeg"
+                         alt="Арктический пейзаж на полярном маршруте">
+
+                    <div class="card-title">Полярный маршрут</div>
+                </div>
+
+                <div class="card-body">
+
+                    <h2 class="visually-hidden">Полярный маршрут</h2>
+
+                    <p class="desc">
+                        Арктическое путешествие для любителей экстремального отдыха.
+                    </p>
+
+                    <div class="route-line">
+                        Ноябрьск → Салехард
+                    </div>
+
+                    <div class="card-info-row">
+                        <span>📍 1200 км</span>
+                        <span>⏱ 3 дня</span>
+                    </div>
+
+                    <div class="tags">
+                        <span>Экстрим</span>
+                        <span>Зима</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- карточка -->
+            <div class="route-card-new" role="listitem">
+
+                <div class="card-image">
+                    <img src="img/Alexander_Khit.jpeg"
+                         alt="Маяки Владивостока на берегу моря">
+
+                    <div class="card-title">Маяки Владивостока</div>
+                </div>
+
+                <div class="card-body">
+
+                    <h2 class="visually-hidden">Маяки Владивостока</h2>
+
+                    <p class="desc">
+                        Короткий маршрут по морским локациям.
+                    </p>
+
+                    <div class="route-line">
+                        Владивосток
+                    </div>
+
+                    <div class="card-info-row">
+                        <span>📍 42 км</span>
+                        <span>⏱ 1 день</span>
+                    </div>
+
+                    <div class="tags">
+                        <span>Выходные</span>
+                        <span>С детьми</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<script src="main.js"></script>
+
+</body>
+</html>

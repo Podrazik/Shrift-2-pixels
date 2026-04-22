@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Россия</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<a href="#main-content" class="visually-hidden">Перейти к контенту</a>
+
+<main id="main-content">
+
+  <section class="hero">
+
+    <div class="hero-bg" aria-hidden="true">
+      <div class="bg active" style="background-image:url('img/aerial-view-lake-with-green-trees.jpg')"></div>
+      <div class="bg" style="background-image:url('img/beautiful-quarry-near-lake-covered-with-thin-ice.jpg')"></div>
+      <div class="bg" style="background-image:url('img/landscape-with-mountains-lake.jpg')"></div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container header-inner">
+
+        <div class="logo">
+          <img src="./img/logo.svg" alt="Логотип национального проекта Туризм и гостеприимство">
+          <span>ТУРИЗМ<br>И ГОСТЕПРИИМСТВО</span>
+        </div>
+
+        <nav class="nav" aria-label="Основная навигация">
+          <a href="#">Все новости</a>
+          <a href="#">Фотобанк</a>
+        </nav>
+
+        <div class="right">
+
+          <button class="icon small" aria-label="ВКонтакте">
+            <img src="img/vk.webp" alt="ВКонтакте">
+          </button>
+
+          <button class="icon small" aria-label="Одноклассники">
+            <img src="img/odnoklasniki.svg" alt="Одноклассники">
+          </button>
+
+          <button class="icon small" aria-label="WhatsApp">
+            <img src="img/wahtsup.webp" alt="WhatsApp">
+          </button>
+
+          <button class="icon big search-btn"
+                  aria-label="Открыть поиск"
+                  aria-controls="search"
+                  aria-expanded="false">
+            🔍
+          </button>
+
+          <div class="search-overlay" aria-hidden="true"></div>
+
+          <button class="theme-toggle" aria-label="Переключить тему">
+            <div class="toggle-circle"></div>
+          </button>
+
+          <button class="icon big menu-btn"
+                  aria-label="Открыть меню"
+                  aria-controls="menu"
+                  aria-expanded="false">
+            ≡
+          </button>
+
+        </div>
+      </div>
+    </header>
+
+    <!-- ПОИСК -->
+    <div id="search"
+         class="search-bar"
+         role="search"
+         aria-hidden="true">
+
+      <input type="text"
+             placeholder="Введите запрос"
+             aria-label="Поиск маршрутов">
+
+      <button>Найти</button>
+    </div>
+
+    <!-- МЕНЮ -->
+    <div id="menu"
+         class="menu-overlay"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="menu-title"
+         aria-hidden="true">
+
+      <h2 id="menu-title" class="visually-hidden">Меню сайта</h2>
+
+      <div class="menu">
+
+        <div class="menu-left">
+          <button class="menu-item active"><span>Когда едем</span></button>
+          <button class="menu-item"><span>Чего хочется</span></button>
+          <button class="menu-item"><span>Маршруты</span></button>
+          <button class="menu-item"><span>События</span></button>
+          <button class="menu-item"><span>Полезное</span></button>
+        </div>
+
+        <div class="menu-right">
+          <div class="menu-content active">
+            <p>Лето</p>
+            <p>Зима</p>
+            <p>Межсезонье</p>
+            <p>Круглый год</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- HERO -->
+    <div class="hero-content">
+      <div class="hero-inner">
+        <div class="div-styles">
+          <div class="div-styles-animate">
+
+            <div class="titles">
+              <h1 class="text-wrapper">РОССИЯ</h1>
+            </div>
+
+            <div class="div-description">
+              <div class="p-description">
+                <p>ТЕРРИТОРИЯ<br>ГОСТЕПРИИМСТВА</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- СЛАЙДЕР -->
+    <div class="regions-bar" role="region" aria-label="Регионы России">
+
+      <button class="nav-btn left" aria-label="Назад">
+        <span class="arrow">‹</span>
+      </button>
+
+      <div class="div-swiper-wrapper">
+        <div class="slider-track">
+
+          <div class="page active">
+            <div class="div-swiper-slide" tabindex="0">АРКТИКА</div>
+            <div class="div-swiper-slide" tabindex="0">СЕВЕРО-ЗАПАД</div>
+            <div class="div-swiper-slide" tabindex="0">ЦЕНТР</div>
+            <div class="div-swiper-slide" tabindex="0">ЧЕРНОЗЕМЬЕ</div>
+            <div class="div-swiper-slide" tabindex="0">КАВКАЗ</div>
+            <div class="div-swiper-slide" tabindex="0">ЮГ</div>
+          </div>
+
+          <div class="page">
+            <div class="div-swiper-slide" tabindex="0">ПОВОЛЖЬЕ</div>
+            <div class="div-swiper-slide" tabindex="0">СЕВЕР</div>
+            <div class="div-swiper-slide" tabindex="0">УРАЛ</div>
+            <div class="div-swiper-slide" tabindex="0">СИБИРЬ</div>
+            <div class="div-swiper-slide" tabindex="0">ВОСТОК</div>
+          </div>
+
+        </div>
+      </div>
+
+      <button class="nav-btn right" aria-label="Вперед">
+        <span class="arrow">›</span>
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- POPULAR -->
+  <section class="popular">
+
+    <div class="container">
+
+      <h2 class="popular-title">Популярные направления</h2>
+
+      <div class="popular-content">
+        <div class="popular-grid" role="list">
+
+          <div class="card" role="listitem">
+            <img src="img/Nick_N_A_shutt.jpeg" alt="Золотое кольцо, древние города и храмы с золотыми куполами">
+            <div class="card-info">
+              <h3>Золотое кольцо</h3>
+              <p>Центр и Поволжье</p>
+            </div>
+          </div>
+
+          <div class="card" role="listitem">
+            <img src="img/Sergey_Morshch.jpeg" alt="Церковь на берегу Волги, маршрут Серебряное ожерелье">
+            <div class="card-info">
+              <h3>Серебряное ожерелье</h3>
+              <p>Северо-Запад</p>
+            </div>
+          </div>
+
+          <div class="card" role="listitem">
+            <img src="img/Vladimir_Ushar.jpeg" alt="Петрозаводск, лодки на реке и отражение деревьев">
+            <div class="card-info">
+              <h3>Петрозаводск</h3>
+              <p>Карелия</p>
+            </div>
+          </div>
+
+          <div class="card" role="listitem">
+            <img src="img/mob1.jpeg" alt="Астрахань, каспийские розы и зелёная природа">
+            <div class="card-info">
+              <h3>Астрахань</h3>
+              <p>Астраханская область</p>
+            </div>
+          </div>
+
+          <div class="card" role="listitem">
+            <img src="img/shutterstock_1.jpeg" alt="Владивосток, маяк у моря и скалистый берег">
+            <div class="card-info">
+              <h3>Владивосток</h3>
+              <p>Приморский край</p>
+            </div>
+          </div>
+
+          <div class="card" role="listitem">
+            <img src="img/Khabarovsk_3.jpeg" alt="Хабаровск, мост через реку Амур">
+            <div class="card-info">
+              <h3>Хабаровск</h3>
+              <p>Хабаровский край</p>
+            </div>
+          </div>
+
+          <div class="card" role="listitem">
+            <img src="img/Collection_May.jpeg" alt="Улан-Удэ, площадь и памятник Ленину">
+            <div class="card-info">
+              <h3>Улан-Удэ</h3>
+              <p>Бурятия</p>
+            </div>
+          </div>
+
+          <div class="card" role="listitem">
+            <img src="img/zaglavnaya_Eka.jpeg" alt="Екатеринбург, небоскрёбы и деловой центр">
+            <div class="card-info">
+              <h3>Екатеринбург</h3>
+              <p>Свердловская область</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- AUTO -->
+  <section class="auto-routes-wrapper">
+
+    <div class="auto-banner">
+
+      <div class="auto-overlay"></div>
+
+      <div class="auto-content">
+
+        <div class="auto-left">
+          <h2>Открывайте новые автомаршруты</h2>
+          <p>Путешествовать на машине любят многие россияне. Мы сделали путеводители по всей стране. Вот где можно покататься: Центр, Русский Север.</p>
+        </div>
+
+        <div class="auto-right">
+
+          <div class="stats">
+
+            <a href="avto.html" class="auto-btn">
+              Показать маршруты
+            </a>
+
+            <div aria-live="polite">
+              <span id="count" class="num">131</span>
+              <p>готовый маршрут</p>
+            </div>
+
+            <div>
+              <span class="num">68</span>
+              <p>регионов для автопутешествий</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="auto-cards">
+
+      <div class="auto-card">
+        <img src="img/saiko3p_shutte.jpeg" alt="Ставропольский край, панорама города и горы">
+        <div class="info">
+          <h3>Горизонты России</h3>
+          <p>Ставропольский край · 3 дня</p>
+        </div>
+      </div>
+
+      <div class="auto-card">
+        <img src="img/Kirill_Skorobo.jpeg" alt="Тыва, озеро и горы">
+        <div class="info">
+          <h3>Три озера</h3>
+          <p>Тыва · 2 дня</p>
+        </div>
+      </div>
+
+      <div class="auto-card">
+        <img src="img/Victoria_Balob.jpeg" alt="Адыгея, зелёные холмы и горы">
+        <div class="info">
+          <h3>Автомобильный маршрут по Адыгее</h3>
+          <p>MCK +4</p>
+        </div>
+      </div>
+
+      <div class="auto-card">
+        <img src="img/Tatiana_Zinche.jpeg" alt="Марий Эл, набережная города">
+        <div class="info">
+          <h3>Край звонких гуслей</h3>
+          <p>Марий Эл · 2 дня</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <div class="footer-left">
+      <h2>ТУРИЗМ И ГОСТЕПРИИМСТВО</h2>
+      <p class="footer-desc">Открывайте Россию по-новому.</p>
+    </div>
+
+    <nav class="footer-links" aria-label="Навигация в подвале">
+      <a href="#">Маршруты</a>
+      <a href="#">Регионы</a>
+      <a href="#">События</a>
+      <a href="#">Фотобанк</a>
+    </nav>
+
+    <div class="footer-right">
+      <button class="footer-btn">Написать нам</button>
+
+      <div class="socials">
+        <button class="soc" aria-label="ВКонтакте">VK</button>
+        <button class="soc" aria-label="Одноклассники">OK</button>
+        <button class="soc" aria-label="Telegram">TG</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Туризм РФ — Все права защищены
+  </div>
+
+</footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>
